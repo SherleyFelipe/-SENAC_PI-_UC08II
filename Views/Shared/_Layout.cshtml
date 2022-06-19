@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - All_Sport</title>
+      <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+     
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+              
+                <img src="~/img/logo.png" alt="All Sport"  width="30px" />
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">All_Sport</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+        <!-- FOOTER -->
+  <footer class="container-fluid bg-dark-color" id="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- FOOTER TOP -->
+        <div class="col-12" id="footer-top">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <h2>
+                All Sport
+              </h2>
+            </div>
+            <div class="col-4" id="social-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER DETAILS -->
+        <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+              <h4>Fique por dentro das novidades</h4>
+              <p class="secondary-color">
+                Inscreva-se para saber em primeira mão
+              </p>
+           
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+              <h4>Formas de contato</h4>
+              <p class="secondary-color">(11)9999-1111</p>
+              <p class="secondary-color">allsportloja@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-4" id="links-container">
+              <div class="row">
+                <h4>Você pode estar buscando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="secondary-color">Endereço</a></li>
+
+                    <li><a href="#" class="secondary-color">Vendas</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+
+                    <a href="#" class="secondary-color">Trabalhe conosco</a>
+                    </li>
+                    <li><a href="#" class="secondary-color">Contato</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="col-12" id="footer-bottom">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">Sherley Lopes Felipe &copy; 2022</p>
+            </div>
+            <div class="col-12 col-md-3">
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>
